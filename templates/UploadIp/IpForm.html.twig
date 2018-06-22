@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="row">
+        <div class="columns medium-12 medium-centered">
+            <div class="row text-center">
+                <div class="columns">
+                    <h1>Ips to Cities</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                {{ form_start(itemForm) }}
+                <div class="columns">
+                    {{ form_widget(itemForm.ip) }}
+                </div>
+            </div>
+                <div class="row text-center">
+                    <div class="columns">
+                        {{ form_widget(itemForm.convert) }}
+                    </div>
+                </div>
+                <input id="initial" type="hidden" name="initial" value="0"/>
+        </div>
+        {{ form_end(itemForm) }}
+    </div>
+    <div class="reveal" id="status" data-reveal>
+        <h1 class="text-center">Waiting...</h1>
+    </div>
+{% endblock %}

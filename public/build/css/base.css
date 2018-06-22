@@ -1,0 +1,16 @@
+body {
+    background: url("../img/ip.jpg");
+    background-size: cover;
+}
+.row {
+    max-width: 90rem;
+}
+#ip_ip {
+    width: 16%;
+    margin: 10px auto;
+    min-width: 240px;
+}
+.button {
+    font-size: 45px;
+    border-radius: 20px;
+}
