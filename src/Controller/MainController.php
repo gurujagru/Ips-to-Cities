@@ -18,6 +18,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Class MainController
+ *
+ * Converts ips to cities.
  * @package App\Controller
  */
 class MainController extends Controller
