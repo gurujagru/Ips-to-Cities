@@ -77,7 +77,7 @@ class MainController extends Controller
             // Collecting country data from user IP address...
             $country = $this->getCityName($ip);
             $city = $country['city'];
-            $val = [$ip, $city];
+            $val = [$ip, $city, $country['country']['shortCode']];
             fputcsv($fp, $val);
         }
 
